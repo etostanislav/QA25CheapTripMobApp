@@ -1,11 +1,10 @@
 package tests;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class MainPageTests extends TestBase{
     @Test
@@ -14,7 +13,7 @@ public class MainPageTests extends TestBase{
         System.out.println("Hello!");
     }
 
-    @Test(groups = "UI")
+    @Test
     public void sloganIsDisplayed(){
         WebElement slogan = driver.findElement(
                 By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget." +
